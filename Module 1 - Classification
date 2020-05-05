@@ -1,0 +1,34 @@
+# Microsoft-MachineLearning-Microsoft-DAT203.2x
+# Azure Machine Learning Studio
+
+Classification
+- Yes/No questions
+- ex. given shapes, "Yes" it is the shape of a chair or "No" it is not in the shape of a chair
+
+Loss Functions 
+- l(yf(x))
+- Measures classification error 
+
+3 types of Loss Functions
+(AdaBoost) e^-yf(x)
+(Logistic Regression) log(1+e^-yf(x))
+(SVM) max(0,1-yf(x))
+
+Zero-One Loss Function
+- Lose 1 point if yf(x)<0, otherwise lose 0 points > tells you if your classifier is right or wrong
+
+Decision boundary for Loss Functions
+yf(x)<0 ... (Decison Boundary) ... yf(x)>0
+"very wrong" "sort of wrong" (Decision Boundary) "sort of correct" "very correct"
+huge penalties <---> no penalty
+
+Ockham's Razor 
+- The best models are the simple models that fit the data well
+- Hypothesis that predict equally well, we should choose the one with the fewest assumptions
+
+Statistical Learning Theory
+- Focuses on the balance between accuracy and simplicity (simplicity is also called Regularization Machine Learning) 
+- Most common machine learning chooses a function f to minimize training error and complexity
+
+Logistic Regression
+> minimize the average loss of log(1+e^-yf(x))
